@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+p{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+div{
+    text-align: center;
+}
+
+button{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    cursor: pointer;
+}
