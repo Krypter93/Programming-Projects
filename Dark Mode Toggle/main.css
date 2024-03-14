@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.check{
+    visibility: hidden;
+}
+
+.toggle-label{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#toggle-block{
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 0.4s;
+    /* animation: toggleOff 0.4s linear forwards; */
+}
+
+.check:checked + .toggle-label{
+    background-color: white;
+}
+
+.check:checked + .toggle-label #toggle-block{
+    /* animation: toggleOn 0.4s linear forwards; */
+    background: black;
+    transform: translateX(40px)
+}
+
+/* @keyframes toggleOn{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(40x);
+    }
+} */
+
+/* @keyframes toggleOff{
+    100% {
+        transform: translateX(40px);
+    }
+    0% {
+        transform: translateX(0);
+    }
+} */
